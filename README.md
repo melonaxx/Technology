@@ -1,2 +1,1 @@
-# Technology
-php plugins...
+# Introduction

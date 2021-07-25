@@ -1,0 +1,52 @@
+{
+    "author": "Edcoor",
+    "description": "This is record sharing by Edcoor.",
+    "extension": null,
+    "generator": "site",
+    "isbn": "",
+    "links": {
+        "sharing": {
+            "all": null,
+            "facebook": null,
+            "google": null,
+            "twitter": null,
+            "weibo": null
+        },
+        "sidebar": {
+            "谷歌": "https://www.google.com",
+            "dddd": "https://www.google.com"
+        }
+    },
+    "output": null,
+    "pdf": {
+        "fontSize": 12,
+        "footerTemplate": null,
+        "headerTemplate": null,
+        "margin": {
+            "bottom": 36,
+            "left": 62,
+            "right": 62,
+            "top": 36
+        },
+        "pageNumbers": true,
+        "paperSize": "a4"
+    },
+    "plugins": [
+        "splitter",
+        "favicon-absolute",
+        "collapsible-menu"
+    ],
+    "pluginsConfig": {
+        "favicon-absolute":{
+            "favicon": "/favicon.ico",
+            "bookmark": "/favicon.ico",
+            "appleTouchIconPrecomposed152": "/favicon.ico"
+        }
+    },
+    "language": "zh-hans",
+    "title": "Edcoor",
+    "variables": {},
+    "styles": {
+        "website": "assets/styles/website.css"
+    }
+}
