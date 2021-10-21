@@ -1,6 +1,6 @@
 {
-    "author": "Edcoor",
-    "description": "This is record sharing by Edcoor.",
+    "author": "易多客",
+    "description": "知识源于滴沙成塔~",
     "extension": null,
     "generator": "site",
     "isbn": "",
@@ -11,10 +11,6 @@
             "google": null,
             "twitter": null,
             "weibo": null
-        },
-        "sidebar": {
-            "谷歌": "https://www.google.com",
-            "dddd": "https://www.google.com"
         }
     },
     "output": null,
@@ -32,21 +28,46 @@
         "paperSize": "a4"
     },
     "plugins": [
+        "-lunr",
+        "-search",
+        "search-pro",
+        "code",
         "splitter",
+        "advanced-emoji",
         "favicon-absolute",
-        "collapsible-menu"
+        "copy-code-button",
+        "hide-element",
+        "anchor-navigation-ex",
+        "tbfed-pagefooter",
+        "insert-logo"
     ],
     "pluginsConfig": {
+        "custom-html-footer": {
+            "footerPath": "/layouts/footer.html"
+        },
         "favicon-absolute":{
             "favicon": "/favicon.ico",
             "bookmark": "/favicon.ico",
             "appleTouchIconPrecomposed152": "/favicon.ico"
+        },
+        "hide-element": {
+            "elements": [".gitbook-link"]
+        },
+        "anchor-navigation-ex": {
+            "showLevel": true,
+            "showGoTop": false
+        },
+        "tbfed-pagefooter": {
+            "copyright": " &copy 2021 易多客 <a href='https://www.beian.miit.gov.cn/' target='_blank'>京ICP备17028238号-1</a> ",
+            "modify_label": "modify at：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "insert-logo": {
+            "url": "/images/gitbook_avatar.png",
+            "style": "background: none;max-height:80px;"
         }
     },
     "language": "zh-hans",
-    "title": "Edcoor",
-    "variables": {},
-    "styles": {
-        "website": "assets/styles/website.css"
-    }
+    "title": "易多客",
+    "variables": {}
 }
