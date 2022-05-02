@@ -15,3 +15,4 @@
 * [Python基础知识](/tech/Python基础知识.md)
 * [React基础知识](/tech/React基础知识.md)
 * [Vim基础知识](/tech/Vim基础知识.md)
+* [Postman使用基础](/tech/Postman使用基础.md)
