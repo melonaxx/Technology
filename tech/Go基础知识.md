@@ -44,7 +44,7 @@ go build
 ### 3、开发命令
 
 - `go build`（常用）
-- `go run`（不常用）
+- `go run`（常用）
 - `go install`(不常用)
 
 ## 二、基础语法
@@ -429,4 +429,42 @@ printf(int1[0]) // 数组可以通过下标进行访问,访问越界会panic
 ### 7、map
 
 ### 8、函数
+
+## 三、常用包
+
+### times包
+
+```go
+
+	// 获取当前时间戳
+	fmt.Println(time.Now().Unix())
+	fmt.Println(time.Now().Local().Unix())
+	// 获取当前时间（有格式）
+	fmt.Println(time.Now().Format("2006-01-02 15:04:05"))
+	// 时间戳转换为时间格式
+	fmt.Println(time.Unix(1652919398, 0).Format("2006-01-02 15:04:05"))
+	// 时间格式转换为时间戳
+	t, _ := time.Parse("2006-01-02 15:04:05", "2022-05-19 08:35:54")
+	fmt.Println(t.Unix())
+	// 时间戳延长一周、一月、一年
+	fmt.Println(time.Unix(1652949354, 0).UTC().Add(2 * time.Hour).Format("2006-01-02 15:04:05"))
+	fmt.Println(time.Now().Add(2 * time.Hour).Format("2006-01-02 15:04:05"))
+	// 时间戳后退一周、一月、一年
+	fmt.Println(time.Now().Add(-1 * time.Hour).Format("2006-01-02 15:04:05"))
+	fmt.Println(time.Unix(1652949354, 0).UTC().Add(-1 * time.Hour).Format("2006-01-02 15:04:05"))
+
+	// 时间格式延长一周、一月、一年
+	timeStr := "2022-05-19 08:03:51"
+	t, _ = time.Parse("2006-01-02 15:04:05", timeStr)
+	fmt.Println(t.Add(3 * time.Hour).Format("2006-01-02 15:04:05"))
+
+	t, _ = time.Parse("2006-01-02 15:04:05", time.Now().Format("2006-01-02 15:04:05"))
+	fmt.Println(t.Add(1 * time.Hour).Format("2006-01-02 15:04:05"))
+	// 时间格式后退一周、一月、一年
+	t, _ = time.Parse("2006-01-02 15:04:05", timeStr)
+	fmt.Println(t.Add(-3 * time.Hour).Format("2006-01-02 15:04:05"))
+
+	t, _ = time.Parse("2006-01-02 15:04:05", time.Now().Format("2006-01-02 15:04:05"))
+	fmt.Println(t.Add(-1 * time.Hour).Format("2006-01-02 15:04:05"))
+```
 
